@@ -1,35 +1,227 @@
 <!doctype html>
-<html lang="sk">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Moje portfólio — začiatok</title>
-  <!-- Vzhľad stránky je v samostatnom súbore styles.css (vrstva CSS) -->
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="Underground Rap Community: novinky, releasy, rozhovory, videá a koncerty z underground rapovej scény.">
+  <title>Underground Rap Community</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    try {
+      if (localStorage.getItem("urc-theme") === "light") {
+        document.documentElement.dataset.theme = "light";
+      }
+    } catch {}
+  </script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="masthead">
+      <div class="masthead-tools">
+        <details class="menu-wrap">
+          <summary class="icon-button menu-button" aria-label="Open menu">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" /></svg>
+          </summary>
+          <div class="menu-popover">
+            <a href="#events">Events</a>
+            <a href="#watch">Watch</a>
+            <a href="#shop">Shop</a>
+            <a href="#rap-news">Rap news</a>
+          </div>
+        </details>
+        <form class="search-form" role="search" action="#rap-news">
+          <button class="search-submit" type="submit" aria-label="Search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3" /><path d="m16 16 4.2 4.2" /></svg>
+          </button>
+          <input type="search" name="q" placeholder="Search..." aria-label="Search stories">
+        </form>
+      </div>
 
-  <main class="uvitanie">
-    <div class="emoji">👋</div>
-    <h1>Tu vznikne moje portfólio</h1>
-    <p class="podtext">
-      Toto je štartová stránka kurzu <strong>Tvorba webstránok</strong>.
-      Odteraz ju budeš meniť ty — s pomocou AI asistenta.
-    </p>
+      <a class="brand" href="#top" aria-label="Underground Rap Community home">
+        <img src="img/ug%20rap.png" alt="Underground Rap Community">
+      </a>
 
-    <div class="karta">
-      <p class="karta-nadpis">Ako začať:</p>
-      <ol>
-        <li>Otvor <strong>Copilot Chat</strong> (ikona Copilota vpravo) — sem píšeš, čo chceš vytvoriť.</li>
-        <li>Tento súbor <code>index.html</code> si pozri v <strong>živom náhľade</strong>: pravý klik naň → <em>Show Preview</em>.</li>
-        <li>Choď na <strong>Blok 7</strong> kurzu a postupuj podľa neho.</li>
-      </ol>
+      <div class="masthead-links">
+        <a href="#community">Community</a>
+        <a href="#rap-news">The scene</a>
+        <a class="icon-button bag-button" href="#shop" aria-label="Shop the drop">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 12H4L5 8Z" /><path d="M9 9V6a3 3 0 0 1 6 0v3" /></svg>
+        </a>
+        <a class="sign-in" href="#community">Sign in</a>
+        <button class="icon-button theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false" title="Switch to light theme">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" /></svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.5 8.5 0 1 0 20.2 15.4Z" /></svg>
+        </button>
+      </div>
     </div>
 
-    <p class="poznamka">
-      Keď spravíš prvú zmenu, tento text pokojne zmaž — je len na úvod.
-    </p>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a href="#events">Events</a>
+      <a href="#watch">Watch</a>
+      <a href="#shop">Shop</a>
+      <a href="#rap-news">Rap news</a>
+      <a href="#features">Features</a>
+      <a href="#drops">Drops</a>
+      <a href="#watch">Video</a>
+    </nav>
+  </header>
+
+  <main id="main" class="page-shell">
+    <section class="lead-grid" id="top" aria-label="Top stories and upcoming events">
+      <article class="lead-story">
+        <img class="lead-image" src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1500&q=85" alt="Crowd at an underground music show">
+        <div class="lead-shade"></div>
+        <span class="category-tag">Features</span>
+        <div class="lead-copy">
+          <p class="eyebrow">The underground report</p>
+          <h1>Who’s running the scene right now?</h1>
+          <div class="lead-meta"><span>By the URC team</span><a class="text-link" href="#features">Read the story <span aria-hidden="true">→</span></a></div>
+        </div>
+      </article>
+
+      <section class="events-panel" id="events" aria-labelledby="events-title">
+        <div class="section-heading compact-heading">
+          <span class="eyebrow">Live &amp; local</span>
+          <h2 id="events-title">Upcoming events</h2>
+        </div>
+        <article class="event-item">
+          <p class="event-date">Brooklyn, NY <span>Dec 06</span></p>
+          <h3>Underground Cypher Vol. 4</h3>
+          <p class="event-detail">A night for the next wave. Live sets, open cypher and local selectors.</p>
+          <a class="event-link" href="#community">Get tickets <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="event-item">
+          <p class="event-date">Los Angeles, CA <span>Dec 14</span></p>
+          <h3>Battle Rap Finals: East vs West</h3>
+          <p class="event-detail">Two coasts. One stage. The season finale is almost here.</p>
+          <a class="event-link" href="#community">Get tickets <span aria-hidden="true">→</span></a>
+        </article>
+        <a class="all-events" href="#events">View all events <span aria-hidden="true">↗</span></a>
+      </section>
+
+      <aside class="side-stories" aria-label="More rap news">
+        <article class="side-story">
+          <a class="side-image-link" href="#rap-news">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80" alt="Artist portrait">
+            <span class="image-label">Rap news</span>
+          </a>
+          <h2><a href="#rap-news">Independent artists are changing the rules</a></h2>
+          <p class="story-meta">Scene report <span>·</span> 4 min read</p>
+        </article>
+        <article class="side-story side-story-small">
+          <span class="category-text">Drops</span>
+          <h2><a href="#drops">New sounds coming out of the underground</a></h2>
+          <p class="story-meta">New music <span>·</span> 2 min read</p>
+        </article>
+      </aside>
+    </section>
+
+    <section class="latest-section" id="rap-news" aria-labelledby="latest-title">
+      <div class="section-heading section-heading-row">
+        <div><span class="eyebrow">Fresh from the scene</span><h2 id="latest-title">Latest from the underground</h2></div>
+        <a class="section-link" href="#features">All stories <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="latest-grid">
+        <article class="feature-card" id="features">
+          <a class="feature-image image-frame" href="#community">
+            <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=85" alt="Rapper performing on a dimly lit stage">
+            <span class="category-tag">Interview</span>
+          </a>
+          <div class="feature-copy">
+            <p class="story-meta">In conversation <span>·</span> 8 min read</p>
+            <h3><a href="#community">The producer behind the sound shaping a new wave</a></h3>
+            <p class="article-summary">In the studio, outside the spotlight: building a sound that feels like home.</p>
+          </div>
+        </article>
+        <div class="story-list">
+          <article class="story-row">
+            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=420&q=80" alt="Lights over a crowded concert venue">
+            <div><span class="category-text">Music video</span><h3><a href="#watch">New visuals turn a late-night session into a movement</a></h3><p class="story-meta">2 hours ago</p></div>
+          </article>
+          <article class="story-row">
+            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=420&q=80" alt="Performer holding a microphone">
+            <div><span class="category-text">Reviews</span><h3><a href="#music">No skips on the latest independent mixtape</a></h3><p class="story-meta">5 hours ago</p></div>
+          </article>
+          <article class="story-row">
+            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=420&q=80" alt="DJ performing under stage lights">
+            <div><span class="category-text">Editorial</span><h3><a href="#community">The people building scenes beyond the spotlight</a></h3><p class="story-meta">Yesterday</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="watch-section" id="watch" aria-labelledby="watch-title">
+      <div class="section-heading section-heading-row">
+        <div><span class="eyebrow">Watch / video</span><h2 id="watch-title">Raw footage from the scene</h2></div>
+        <p class="section-intro">Cypher clips, beat-room dispatches and street-level visuals. Straight from the community.</p>
+      </div>
+      <div class="video-grid">
+        <article class="video-card">
+          <a class="video-thumb" href="#community"><img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=900&q=80" alt="Live crowd at a rap show"><span class="play-button" aria-label="Play video"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 10 6-10 6V6Z" /></svg></span><span class="duration">06:42</span></a>
+          <p class="category-text">Cypher</p><h3><a href="#community">Basement cypher: raw verses after midnight</a></h3>
+        </article>
+        <article class="video-card">
+          <a class="video-thumb" href="#community"><img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=900&q=80" alt="Producer working in a recording studio"><span class="play-button" aria-label="Play video"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 10 6-10 6V6Z" /></svg></span><span class="duration">05:18</span></a>
+          <p class="category-text">Beat session</p><h3><a href="#community">Producer cookup: gritty drums and crown loops</a></h3>
+        </article>
+        <article class="video-card">
+          <a class="video-thumb" href="#community"><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=80" alt="Audience at a packed underground show"><span class="play-button" aria-label="Play video"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 10 6-10 6V6Z" /></svg></span><span class="duration">04:09</span></a>
+          <p class="category-text">On the block</p><h3><a href="#community">Street cut: the block where the scene started</a></h3>
+        </article>
+      </div>
+    </section>
+
+    <section class="shop-section" id="shop" aria-labelledby="shop-title">
+      <div class="section-heading section-heading-row">
+        <div><span class="eyebrow">Streetwear capsule</span><h2 id="shop-title">Shop the drop</h2></div>
+        <a class="section-link" id="drops" href="#community">View all merch <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="product-grid">
+        <a class="product-card" href="#community"><span class="product-badge">Bestseller</span><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=85" alt="Black graphic streetwear t-shirt"><span class="product-name">URC heavyweight tee</span><span class="product-price">$38</span></a>
+        <a class="product-card" href="#community"><span class="product-badge">New drop</span><img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?auto=format&fit=crop&w=800&q=85" alt="Streetwear hoodie in a clothing studio"><span class="product-name">After Hours hoodie</span><span class="product-price">$72</span></a>
+        <a class="product-card" href="#community"><span class="product-badge">Limited</span><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=85" alt="Streetwear look from an independent fashion label"><span class="product-name">Scene setter jacket</span><span class="product-price">$96</span></a>
+      </div>
+    </section>
   </main>
 
+  <footer class="site-footer" id="community">
+    <a class="footer-brand" href="#top"><img src="img/ug%20rap.png" alt="Underground Rap Community"></a>
+    <p>Independent voices. One community.</p>
+    <nav class="social-links" aria-label="Social media">
+      <a href="https://www.instagram.com/">Instagram</a>
+      <a href="https://www.reddit.com/">Reddit</a>
+      <a href="https://discord.com/">Discord</a>
+      <a href="https://www.tiktok.com/">TikTok</a>
+    </nav>
+    <span class="copyright">© 2026 Underground Rap Community</span>
+  </footer>
+  <script>
+    const themeToggle = document.querySelector("#theme-toggle");
+    const themeMeta = document.querySelector('meta[name="theme-color"]');
+
+    function setTheme(theme) {
+      document.documentElement.dataset.theme = theme;
+      const isLight = theme === "light";
+      const label = isLight ? "Switch to dark theme" : "Switch to light theme";
+      themeToggle.setAttribute("aria-pressed", String(isLight));
+      themeToggle.setAttribute("aria-label", label);
+      themeToggle.title = label;
+      themeMeta.setAttribute("content", isLight ? "#f5f5f2" : "#090909");
+    }
+
+    setTheme(document.documentElement.dataset.theme === "light" ? "light" : "dark");
+    themeToggle.addEventListener("click", () => {
+      const nextTheme = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+      setTheme(nextTheme);
+      try {
+        localStorage.setItem("urc-theme", nextTheme);
+      } catch {}
+    });
+  </script>
 </body>
 </html>
