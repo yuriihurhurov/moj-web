@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="Shop underground fashion and grails from partners of Underground Rap Community.">
+  <title>Shop | Underground Rap Community</title>
+  <link rel="icon" type="image/jpeg" href="img/logo-bright.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    try {
+      if (localStorage.getItem("urc-theme") === "light") {
+        document.documentElement.dataset.theme = "light";
+      }
+    } catch {}
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#shop-main">Skip to shop</a>
+  <header class="site-header">
+    <div class="masthead">
+      <div class="masthead-tools">
+        <button class="icon-button menu-button" id="menu-toggle" type="button" aria-label="Open menu" aria-haspopup="dialog" aria-controls="site-menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" /></svg>
+        </button>
+        <form class="search-form" role="search" action="index.html#rap-news">
+          <button class="search-submit" type="submit" aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3" /><path d="m16 16 4.2 4.2" /></svg></button>
+          <input type="search" name="q" placeholder="Search..." aria-label="Search stories">
+        </form>
+      </div>
+      <a class="brand" href="index.html#top" aria-label="Underground Rap Community home"><img src="img/ug%20rap.png" data-dark-logo="img/ug%20rap.png" data-light-logo="img/logo-bright.jpeg" alt="Underground Rap Community"></a>
+      <div class="masthead-links">
+        <a href="index.html#community">Community</a>
+        <a href="index.html#rap-news">The scene</a>
+        <a class="icon-button bag-button" href="shop.html" aria-label="Shop the drop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 12H4L5 8Z" /><path d="M9 9V6a3 3 0 0 1 6 0v3" /></svg></a>
+        <button class="sign-in" id="auth-toggle" type="button" data-auth-toggle>Sign in</button>
+        <button class="icon-button theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false" title="Switch to light theme">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" /></svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.5 8.5 0 1 0 20.2 15.4Z" /></svg>
+        </button>
+      </div>
+    </div>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a href="index.html#events">Events</a><a href="index.html#watch">Watch</a><a href="index.html#brands">Brands</a><a href="shop.html">Shop</a><a href="index.html#rap-news">Rap news</a><a href="index.html#features">Features</a><a href="index.html#drops">Drops</a>
+    </nav>
+  </header>
+
+  <dialog class="menu-dialog" id="site-menu" aria-labelledby="menu-title">
+    <div class="menu-drawer-head">
+      <div><span class="eyebrow">Underground Rap Community</span><h2 id="menu-title">Explore</h2></div>
+      <button class="icon-button menu-close" id="menu-close" type="button" aria-label="Close menu" autofocus><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg></button>
+    </div>
+    <nav class="drawer-nav" aria-label="Menu">
+      <a href="index.html#events"><span class="drawer-number">01</span><span>Events</span><span aria-hidden="true">↗</span></a>
+      <a href="index.html#watch"><span class="drawer-number">02</span><span>Watch</span><span aria-hidden="true">↗</span></a>
+      <a href="index.html#brands"><span class="drawer-number">03</span><span>Brands</span><span aria-hidden="true">↗</span></a>
+      <a href="shop.html"><span class="drawer-number">04</span><span>Shop</span><span aria-hidden="true">↗</span></a>
+      <a href="index.html#rap-news"><span class="drawer-number">05</span><span>Rap News</span><span aria-hidden="true">↗</span></a>
+      <a href="index.html#features"><span class="drawer-number">06</span><span>Features</span><span aria-hidden="true">↗</span></a>
+      <a href="index.html#drops"><span class="drawer-number">07</span><span>Drops</span><span aria-hidden="true">↗</span></a>
+    </nav>
+    <div class="drawer-bottom"><p>Independent voices. One community.</p><button class="sign-in drawer-sign-in" type="button" data-auth-toggle>Sign in</button></div>
+  </dialog>
+
+  <main class="shop-page" id="shop-main">
+    <header class="shop-heading">
+      <span class="eyebrow">Partner selection</span>
+      <h1>Shop</h1>
+      <p>Check out these newest grails from our partners</p>
+    </header>
+
+    <header class="brand-shop-heading">
+      <span class="eyebrow">Featured brand</span>
+      <h1>Bravest Studios</h1>
+    </header>
+
+    <section class="shop-carousel-section" aria-labelledby="bravest-products-title">
+      <h2 class="visually-hidden" id="bravest-products-title">Bravest Studios products</h2>
+      <div class="shop-carousel-controls" aria-label="Browse Bravest Studios products">
+        <button type="button" data-shop-direction="previous" aria-label="Previous product" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg></button>
+        <button type="button" data-shop-direction="next" aria-label="Next product"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></button>
+      </div>
+      <div class="shop-carousel" id="bravest-carousel">
+        <article class="shop-product">
+          <a class="shop-product-link" href="https://braveststudios.com/products/jester-zip-hoodie-cream" target="_blank" rel="noopener noreferrer" aria-label="Red and Cream Jester Hoodie — €129,95">
+            <span class="shop-product-image"><img src="img/jester.webp" alt="Red and Cream Jester Hoodie"></span>
+            <span class="shop-product-info">
+              <span class="shop-product-name">Red and Cream Jester Hoodie</span>
+              <span class="shop-product-price">€129,95</span>
+            </span>
+          </a>
+        </article>
+        <article class="shop-product">
+          <a class="shop-product-link" href="https://braveststudios.com/products/camo-patches-bomber-jacket" target="_blank" rel="noopener noreferrer" aria-label="Camo Patches Bomber Jacket — €200,95">
+            <span class="shop-product-image"><img src="img/bomber.webp" alt="Camo Patches Bomber Jacket"></span>
+            <span class="shop-product-info">
+              <span class="shop-product-name">Camo Patches Bomber Jacket</span>
+              <span class="shop-product-price">€200,95</span>
+            </span>
+          </a>
+        </article>
+        <article class="shop-product">
+          <a class="shop-product-link" href="https://braveststudios.com/products/portrait-hoodie-yellow" target="_blank" rel="noopener noreferrer" aria-label="Yellow Heirloom Hoodie — €129,95">
+            <span class="shop-product-image"><img src="img/heirloom.webp" alt="Yellow Heirloom Hoodie"></span>
+            <span class="shop-product-info">
+              <span class="shop-product-name">Yellow Heirloom Hoodie</span>
+              <span class="shop-product-price">€129,95</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <header class="brand-shop-heading phtmne-shop-heading">
+      <span class="eyebrow">Partner selection</span>
+      <h1>PHTMNE</h1>
+    </header>
+
+    <section class="shop-carousel-section" aria-labelledby="phtmne-products-title">
+      <h2 class="visually-hidden" id="phtmne-products-title">PHTMNE products</h2>
+      <div class="shop-carousel-controls" aria-label="Browse PHTMNE products">
+        <button type="button" data-phtmne-direction="previous" aria-label="Previous product" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg></button>
+        <button type="button" data-phtmne-direction="next" aria-label="Next product"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></button>
+      </div>
+      <div class="shop-carousel" id="phtmne-carousel">
+        <article class="shop-product">
+          <a class="shop-product-link" href="https://phtmne.com/products/new-blkamerika-leather-moto-jacket?variant=57286420103546" target="_blank" rel="noopener noreferrer" aria-label="V2 BLKAMERIKA LEATHER MOTO JACKET — €363,95">
+            <span class="shop-product-image"><img src="img/amerika.webp" alt="V2 BLKAMERIKA LEATHER MOTO JACKET"></span>
+            <span class="shop-product-info">
+              <span class="shop-product-name">V2 BLKAMERIKA LEATHER MOTO JACKET</span>
+              <span class="shop-product-price">€363,95</span>
+            </span>
+          </a>
+        </article>
+        <article class="shop-product">
+          <a class="shop-product-link" href="https://phtmne.com/products/crimson-leather-jacket?variant=57197726531962" target="_blank" rel="noopener noreferrer" aria-label="CRIMSN LEATHER JACKET — €603,95">
+            <span class="shop-product-image"><img src="img/crimsn.webp" alt="CRIMSN LEATHER JACKET"></span>
+            <span class="shop-product-info">
+              <span class="shop-product-name">CRIMSN LEATHER JACKET</span>
+              <span class="shop-product-price">€603,95</span>
+            </span>
+          </a>
+        </article>
+        <article class="shop-product">
+          <a class="shop-product-link" href="https://phtmne.com/products/new-blkamerika-leather-moto-pants?variant=57286421774714" target="_blank" rel="noopener noreferrer" aria-label="V2 BLKAMERIKA LEATHER MOTO PANTS — €363,95">
+            <span class="shop-product-image"><img src="img/amerika pants.webp" alt="V2 BLKAMERIKA LEATHER MOTO PANTS"></span>
+            <span class="shop-product-info">
+              <span class="shop-product-name">V2 BLKAMERIKA LEATHER MOTO PANTS</span>
+              <span class="shop-product-price">€363,95</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <header class="brand-shop-heading vivet-shop-heading">
+      <span class="eyebrow">Partner selection</span>
+      <h1>VIVET</h1>
+    </header>
+
+    <section class="shop-carousel-section" aria-labelledby="vivet-products-title">
+      <h2 class="visually-hidden" id="vivet-products-title">VIVET products</h2>
+      <div class="shop-carousel-controls" aria-label="Browse VIVET products">
+        <button type="button" data-vivet-direction="previous" aria-label="Previous product" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg></button>
+        <button type="button" data-vivet-direction="next" aria-label="Next product"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></button>
+      </div>
+      <div class="shop-carousel" id="vivet-carousel">
+        <article class="shop-product">
+          <a class="shop-product-link" href="https://vivetofficial.com/products/vivet-beginner-hoodie" target="_blank" rel="noopener noreferrer" aria-label="VIVET Beginner Hoodie — $160,00">
+            <span class="shop-product-image"><img src="img/vivet hoodie.webp" alt="VIVET Beginner Hoodie"></span>
+            <span class="shop-product-info">
+              <span class="shop-product-name">VIVET Beginner Hoodie</span>
+              <span class="shop-product-price">$160,00</span>
+            </span>
+          </a>
+        </article>
+        <article class="shop-product">
+          <a class="shop-product-link" href="https://vivetofficial.com/products/vivet-beginner-sweatpant" target="_blank" rel="noopener noreferrer" aria-label="VIVET Beginner Sweatpant — $140,00">
+            <span class="shop-product-image"><img src="img/vivet pant.webp" alt="VIVET Beginner Sweatpant"></span>
+            <span class="shop-product-info">
+              <span class="shop-product-name">VIVET Beginner Sweatpant</span>
+              <span class="shop-product-price">$140,00</span>
+            </span>
+          </a>
+        </article>
+        <article class="shop-product">
+          <a class="shop-product-link" href="https://vivetofficial.com/products/vivet-electrician-boot" target="_blank" rel="noopener noreferrer" aria-label="VIVET Electrician Boot — $320,00">
+            <span class="shop-product-image"><img src="img/vivet boot.webp" alt="VIVET Electrician Boot"></span>
+            <span class="shop-product-info">
+              <span class="shop-product-name">VIVET Electrician Boot</span>
+              <span class="shop-product-price">$320,00</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="community">
+    <section class="newsletter" aria-labelledby="newsletter-title">
+      <div class="newsletter-copy"><span class="eyebrow">Stay connected</span><h2 id="newsletter-title">Sign up for a newsletter</h2></div>
+      <form class="newsletter-form" id="newsletter-form">
+        <div class="newsletter-controls">
+          <label class="visually-hidden" for="newsletter-email">Enter your email</label>
+          <input id="newsletter-email" name="email" type="email" placeholder="Enter your email" autocomplete="email" required>
+          <button class="newsletter-submit" type="submit">Get notified</button>
+        </div>
+        <p class="newsletter-consent">By entering your email, you agree to receive customized marketing messages from us and our advertising partners. You also acknowledge that this site is protected by reCAPTCHA, and that our Privacy Policy and Terms of Service</p>
+        <p class="newsletter-status" id="newsletter-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+    <a class="footer-brand" href="index.html#top"><img src="img/ug%20rap.png" data-dark-logo="img/ug%20rap.png" data-light-logo="img/logo-bright.jpeg" alt="Underground Rap Community"></a>
+    <p>Independent voices. One community.</p>
+    <nav class="social-links" aria-label="Social media">
+      <a href="https://www.instagram.com/" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r=".75" /></svg></a>
+      <a href="https://www.reddit.com/" aria-label="Reddit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 9 4.5 7.5v3M17 9l2.5-1.5v3M7 9c-1.6 1-2.5 2.4-2.5 4 0 3.2 3.4 5.5 7.5 5.5s7.5-2.3 7.5-5.5c0-1.6-.9-3-2.5-4-1.5-.9-3.2-1.3-5-1.3" /><path d="m12 7.7 1-4 3 .7M9 13h.01M15 13h.01M9.5 15.5c1.3 1.1 3.7 1.1 5 0" /><circle cx="18.5" cy="6.5" r="1.5" /></svg></a>
+      <a href="https://discord.com/" aria-label="Discord"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 6.5c3.2-1.5 6.8-1.5 10 0 1.5 2.1 2.3 4.6 2.5 7.2-1.4 1.6-3 2.6-4.7 3.2l-1-1.4M10.2 15.5l-1 1.4c-1.7-.6-3.3-1.6-4.7-3.2.2-2.6 1-5.1 2.5-7.2" /><path d="M9 11.5h.01M15 11.5h.01" /></svg></a>
+      <a href="https://www.tiktok.com/" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4v10.5a3.5 3.5 0 1 1-3-3.46M14 4c.5 3 2.4 4.8 5 5.2" /></svg></a>
+    </nav>
+    <span class="copyright">© 2026 Underground Rap Community</span>
+  </footer>
+  <dialog class="auth-dialog" id="auth-dialog" aria-labelledby="auth-title">
+    <div class="auth-dialog-head">
+      <div><span class="eyebrow">URC account</span><h2 id="auth-title">Welcome back</h2></div>
+      <button class="icon-button auth-close" id="auth-close" type="button" aria-label="Close sign-in dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg></button>
+    </div>
+    <div class="auth-tabs" id="auth-tabs" role="tablist" aria-label="Account access">
+      <button class="auth-tab is-active" id="signin-tab" type="button" role="tab" aria-selected="true" aria-controls="auth-form" data-auth-mode="signin">Sign in</button>
+      <button class="auth-tab" id="signup-tab" type="button" role="tab" aria-selected="false" aria-controls="auth-form" data-auth-mode="signup">Create account</button>
+    </div>
+    <form class="auth-form" id="auth-form">
+      <label class="auth-field" for="auth-email">Email address<input id="auth-email" name="email" type="email" autocomplete="email" required></label>
+      <label class="auth-field" for="auth-password"><span id="password-label">Password</span><input id="auth-password" name="password" type="password" autocomplete="current-password" minlength="8" required></label>
+      <button class="auth-forgot" id="auth-forgot" type="button">Forgot password?</button>
+      <p class="auth-message" id="auth-message" role="status" aria-live="polite"></p>
+      <button class="auth-submit" id="auth-submit" type="submit">Sign in</button>
+    </form>
+  </dialog>
+  <script>
+    const shopCarousel = document.querySelector("#bravest-carousel");
+    const shopPrevious = document.querySelector('[data-shop-direction="previous"]');
+    const shopNext = document.querySelector('[data-shop-direction="next"]');
+
+    function updateShopControls() {
+      if (!shopCarousel) return;
+      shopPrevious.disabled = shopCarousel.scrollLeft <= 2;
+      shopNext.disabled = shopCarousel.scrollLeft >= shopCarousel.scrollWidth - shopCarousel.clientWidth - 2;
+    }
+
+    function scrollShop(direction) {
+      const product = shopCarousel.querySelector(".shop-product");
+      if (!product) return;
+      const gap = Number.parseFloat(getComputedStyle(shopCarousel).columnGap) || 0;
+      shopCarousel.scrollBy({ left: direction * (product.getBoundingClientRect().width + gap), behavior: "smooth" });
+    }
+
+    shopPrevious?.addEventListener("click", () => scrollShop(-1));
+    shopNext?.addEventListener("click", () => scrollShop(1));
+    shopCarousel?.addEventListener("scroll", updateShopControls, { passive: true });
+    window.addEventListener("resize", updateShopControls);
+    requestAnimationFrame(updateShopControls);
+
+    const phtmneCarousel = document.querySelector("#phtmne-carousel");
+    const phtmnePrevious = document.querySelector('[data-phtmne-direction="previous"]');
+    const phtmneNext = document.querySelector('[data-phtmne-direction="next"]');
+
+    function updatePhtmneControls() {
+      if (!phtmneCarousel) return;
+      phtmnePrevious.disabled = phtmneCarousel.scrollLeft <= 2;
+      phtmneNext.disabled = phtmneCarousel.scrollLeft >= phtmneCarousel.scrollWidth - phtmneCarousel.clientWidth - 2;
+    }
+
+    function scrollPhtmne(direction) {
+      const product = phtmneCarousel.querySelector(".shop-product");
+      if (!product) return;
+      const gap = Number.parseFloat(getComputedStyle(phtmneCarousel).columnGap) || 0;
+      phtmneCarousel.scrollBy({ left: direction * (product.getBoundingClientRect().width + gap), behavior: "smooth" });
+    }
+
+    phtmnePrevious?.addEventListener("click", () => scrollPhtmne(-1));
+    phtmneNext?.addEventListener("click", () => scrollPhtmne(1));
+    phtmneCarousel?.addEventListener("scroll", updatePhtmneControls, { passive: true });
+    window.addEventListener("resize", updatePhtmneControls);
+
+    const vivetCarousel = document.querySelector("#vivet-carousel");
+    const vivetPrevious = document.querySelector('[data-vivet-direction="previous"]');
+    const vivetNext = document.querySelector('[data-vivet-direction="next"]');
+
+    function updateVivetControls() {
+      if (!vivetCarousel) return;
+      vivetPrevious.disabled = vivetCarousel.scrollLeft <= 2;
+      vivetNext.disabled = vivetCarousel.scrollLeft >= vivetCarousel.scrollWidth - vivetCarousel.clientWidth - 2;
+    }
+
+    function scrollVivet(direction) {
+      const product = vivetCarousel.querySelector(".shop-product");
+      if (!product) return;
+      const gap = Number.parseFloat(getComputedStyle(vivetCarousel).columnGap) || 0;
+      vivetCarousel.scrollBy({ left: direction * (product.getBoundingClientRect().width + gap), behavior: "smooth" });
+    }
+
+    vivetPrevious?.addEventListener("click", () => scrollVivet(-1));
+    vivetNext?.addEventListener("click", () => scrollVivet(1));
+    vivetCarousel?.addEventListener("scroll", updateVivetControls, { passive: true });
+    window.addEventListener("resize", updateVivetControls);
+    requestAnimationFrame(updateVivetControls);
+    requestAnimationFrame(updatePhtmneControls);
+  </script>
+  <script type="module" src="newsletter.js"></script>
+  <script type="module" src="menu.js"></script>
+  <script type="module" src="auth.js"></script>
+  <script>
+    const themeToggle = document.querySelector("#theme-toggle");
+    const themeMeta = document.querySelector('meta[name="theme-color"]');
+
+    function setTheme(theme) {
+      document.documentElement.dataset.theme = theme;
+      const isLight = theme === "light";
+      const label = isLight ? "Switch to dark theme" : "Switch to light theme";
+      themeToggle.setAttribute("aria-pressed", String(isLight));
+      themeToggle.setAttribute("aria-label", label);
+      themeToggle.title = label;
+      themeMeta.setAttribute("content", isLight ? "#f5f5f2" : "#090909");
+      document.querySelectorAll("[data-dark-logo][data-light-logo]").forEach((logo) => {
+        logo.src = isLight ? logo.dataset.lightLogo : logo.dataset.darkLogo;
+      });
+    }
+
+    setTheme(document.documentElement.dataset.theme === "light" ? "light" : "dark");
+    themeToggle.addEventListener("click", () => {
+      const nextTheme = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+      setTheme(nextTheme);
+      try {
+        localStorage.setItem("urc-theme", nextTheme);
+      } catch {}
+    });
+  </script>
+</body>
+</html>
