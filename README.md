@@ -1,26 +1,27 @@
-# Moje portfólio — začiatok 👋
+Underground Rap Community 🎤
+Vitaj na stránke venovanej underground rapovej scéne. Tento web slúži ako miesto, kde fanúšikovia môžu sledovať najnovšie rapové novinky, objavovať talentovaných interpretov a získavať informácie o pripravovaných udalostiach z undergroundovej hudobnej komunity.
 
-Vitaj! Toto je tvoj štartový projekt pre predmet **Návrh a tvorba webových stránok**. Máš tu pripravené všetko, čo potrebuješ — nič neinštaluješ.
+O stránke
+Stránka ponúka široký prehľad o aktuálnom dianí v underground rape. Návštevníci tu nájdu:
 
-## Ako začať
+najnovšie rapové novinky a články,
+profily interpretov a začínajúcich umelcov,
+informácie o koncertoch a hudobných podujatiach,
+odporúčané videá a live vystúpenia,
+zaujímavosti zo súčasnej rapovej scény.
+Hlavné sekcie
+Sekcia	Popis
+Rap News	Aktuálne novinky a články zo sveta underground rapu.
+Upcoming Events	Prehľad pripravovaných koncertov a hudobných akcií.
+Artist Profiles	Predstavenie interpretov a ich tvorby.
+Features	Rozhovory, príbehy a zaujímavosti z rapovej komunity.
+Watch	Videoklipy, live vystúpenia a ďalší multimediálny obsah.
+Cieľ projektu
+Cieľom webovej stránky je vytvoriť moderný informačný portál pre fanúšikov underground rapu a poskytnúť im jednoduchý prístup k novinkám, udalostiam a obsahu z rapovej komunity.
 
-1. **Spusti si prostredie.** Ak čítaš toto priamo na GitHube, klikni zelené tlačidlo **`< > Code`** → záložka **Codespaces** → **Create codespace on main**. Po chvíli sa otvorí VS Code v prehliadači.
-2. **Otvor AI asistenta.** Vpravo klikni na ikonu **Copilot Chat** — sem budeš písať, čo chceš vytvoriť.
-3. **Pozri si svoj web.** Klikni pravým tlačidlom na súbor `index.html` → **Show Preview** (alebo *Open with Live Preview*). Otvorí sa živý náhľad, ktorý sa sám obnovuje.
-4. **Postupuj podľa predmetu** — začni **Blokom 6**.
-
-## Čo tu nájdeš
-
-| Súbor / priečinok | Na čo je |
-| ----------------- | -------- |
-| `index.html` | Tvoja hlavná stránka — jej **obsah** (zatiaľ len úvodná — čoskoro ju nahradíš svojím portfóliom). |
-| `styles.css` | **Vzhľad** stránky — farby, písmo, rozloženie (vrstva CSS). |
-| `docs/` | Sem sa uloží tvoj **style guide** (dizajnová referencia z Bloku 6) a neskôr tvoj **design brief** (`zadanie-webu.md`, Blok 11). |
-| `img/` | Sem si budeš dávať **obrázky a fotky** (napr. do portfólia v Bloku 7). |
-| `.gitignore` | Hovorí gitu, čo sa **nikdy** nesmie zverejniť — napríklad súbor `.env` s tajnými kľúčmi. |
-
-> **Poznámka:** Nemusíš rozumieť každému súboru. Dôležité je vedieť, že **`index.html` je tvoja stránka** a **do `img/` patria obrázky**. Zvyšok za teba spraví AI.
-
-## Dôležité o bezpečnosti
-
-Tento projekt bude časom **verejný** (aby si web mohol dať online). Preto sem **nikdy nedávaj skutočné heslá ani platobné kľúče**. V kurze používame len bezcenné cvičné kľúče — viac v znalostnej báze *Bezpečnosť kľúčov*.
+Použité technológie
+HTML5
+CSS3
+JavaScript
+GitHub Pages
+Táto stránka bola vytvorená ako študentský projekt v rámci predmetu Návrh a tvorba webových stránok.
